@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <title>
+        FORM
+    </title>
+    <head >
+        <link rel="stylesheet" href="./form_js.css"> 
+    </head>
+    <body>
+        <div id="form">
+            <h2 class="login">Log In</h2>
+            <h9 id="header">wrong username or password</h9>
+            
+            <input type="input" placeholder="username" id="userid"><br>
+            <input type="input" placeholder="password" id="password"><br>
+            
+            <div class="btn">
+            <a href="" onclick="validate(event)">Log in</a><br>
+            </div>
+            
+            <div class="forgotpassword">
+            <a href="" onclick="forgotpassword(event)">Forgot Password ?</a><br>
+            </div>
+            
+            <div class="register">
+            <h9>Already have an account ? <a href="" style="text-decoration:none;color:black;" onclick="register(event)">click here</a></h9>
+            </div>
+        </div>
+        <div id="snackbar">register is not ready yet !!</div>
+    </body>
+
+<script>
+        function validate(event){
+            event.preventDefault(); 
+            if(document.getElementById("userid").value == "smaran" && document.getElementById("password").value == "smaran123"){
+                window.open("./home.html");
+            }
+            else{
+                document.getElementById("header").style.display="block";
+            }
+        }
+        function forgotpassword(event){
+            event.preventDefault();
+            window.alert("Username: smaran password: smaran123");
+        }
+        function register(event){
+            event.preventDefault();
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+    </script>
+</html>

@@ -1,0 +1,120 @@
+body{
+    /* background-image:url("https://thehardtimes.net/wp-content/uploads/2018/04/gothamhospital.jpg"); */
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size: cover; 
+    vertical-align: center;
+    }
+    #form{
+        border-radius: 20px;
+        text-align:center;
+        background-color: rgba(255, 255, 255, 0.4);
+        width:350px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border: 1px solid;
+        box-shadow: inset 0px 0px 10px #000000;
+        display: inline-block;
+        padding: 50px 0px 130px 0px;
+    }
+    .btn a{
+        color: #ffffff;
+        border-radius: 10px;
+        padding:10px 20px 10px 20px;
+        cursor: pointer;
+        background: rgba(50,150,200,0.8);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+    }
+    .btn{
+        margin:20px;
+        float:right;
+        margin-right:100px;
+    }
+    #password{
+        border:none;
+        outline:none;
+        text-align: left;
+        padding: 2px;
+        height:30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow:2px 2px 0px 0px #3296c8;
+        transition: .5s;
+    }
+    #userid{
+        border:none;
+        outline:none;
+        margin:10px;
+        text-align: left;
+        padding:2px;
+        height:30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow:2px 2px 0px 0px #3296c8;
+        transition: .5s;
+    }
+    .login{
+        margin-left: 100px;
+    }
+    .forgotpassword a{
+        color:#000000;
+        text-decoration: none;
+    }
+    .forgotpassword{
+        margin-bottom:-20px;
+        margin-top: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+    }
+    .register {        
+        margin-top: 40px;
+        margin-bottom: -50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+    }
+    #header{
+        color:red;
+        display:none;
+    }
+    #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -140px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+        font-size: 17px;
+      }
+      
+      #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      }
+      
+      @-webkit-keyframes fadein {
+        from {bottom: 0; opacity: 0;} 
+        to {bottom: 30px; opacity: 1;}
+      }
+      
+      @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+      }
+      
+      @-webkit-keyframes fadeout {
+        from {bottom: 30px; opacity: 1;} 
+        to {bottom: 0; opacity: 0;}
+      }
+      
+      @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+      }
