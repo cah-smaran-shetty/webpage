@@ -33,7 +33,7 @@
         function validate(event){
             event.preventDefault(); 
             if(document.getElementById("userid").value == "smaran" && document.getElementById("password").value == "smaran123"){
-                window.open("./home.html");
+                window.location.href="./home.html";
             }
             else{
                 document.getElementById("header").style.display="block";
