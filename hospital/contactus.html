@@ -1,0 +1,46 @@
+<div>
+    <head>
+        <link rel="stylesheet" href="contactus.css">
+    </head>
+    <body>
+        <div id="container">
+            <div>
+                name <span style="color:red;" title="this feild is required">*</span><br>
+            </div><br>
+            <input id="name" type="text" class="field" value=""><br>
+            
+            <div >
+                Email <span style="color:red;" title="this feild is required">*</span><br>
+            </div><br>
+            <input id="mail" type="email" class="field" value="">
+                <div id="aftermail" style="margin-top: -25px;">The content of this field is kept private and will not be shown publicly.
+            </div><br>
+
+            <div >
+                Subject
+            </div><br>
+            <input id="subjects" type="text" class="field" value=""><br>
+
+            <div >
+                comments <span style="color:red;" title="this feild is required">*</span>
+            </div><br>
+            <textarea id="comments" type="text" class="field" style="height:60px;" rows="5;" > </textarea><br>
+
+            <a href="" onclick="save(event)" id="save" style="text-decoration: none;">save</a>
+        </div>
+        <div id="snackbar">Your response has been saved.</div>
+        <div id="snackbar1">Fill all the mandatory details.</div>
+        <script>
+             function save(event){
+            event.preventDefault();
+            console.log(document.getElementById("comments").value);
+            if (document.getElementById("name").value == "" || document.getElementById("mail").value == "" || document.getElementById("comments").innerHTML == "")
+                var x = document.getElementById("snackbar1");
+            else 
+                var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+        </script>
+    </body>
+</div>
