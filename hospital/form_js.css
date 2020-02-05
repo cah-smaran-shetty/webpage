@@ -15,7 +15,8 @@ body{
         left:50%;
         transform: translate(-50%,-50%);
         border: 1px solid;
-        box-shadow: inset 0px 0px 10px #000000;
+        //box-shadow: inset 0px 0px 10px #000000;
+        box-shadow : 6px 8px 6px -5px #000000;
         display: inline-block;
         padding: 50px 0px 130px 0px;
     }
